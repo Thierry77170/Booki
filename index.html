@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booki</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <div class="main-container">
+      <header>
+        <img src="images/logos/Booki.png" alt="logo booki" />
+        <nav>
+          <div>
+            <a href="#hebergements">Hébergements</a>
+          </div>
+          <div>
+            <a href="#activites">Activités</a>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <section>
+          <h1 class="section-title">
+            Trouvez votre hébergement pour des vacances de rêve
+          </h1>
+          <p class="text">En plein centre-ville ou en pleine nature</p>
+
+          <form class="formSearchBar" method="get" action="#">
+            <div class="search-bar">
+              <label for="text-input" class="labelFormSearch">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14px"
+                  height="18px"
+                  viewBox="0 0 14 18"
+                  fill="none"
+                >
+                  <path
+                    d="M6.13594 17.5955C4.23281 15.3326 0 9.84814 0 6.76751C0 3.02987 3.13396 0 7 0C10.8646 0 14 3.02987 14 6.76751C14 9.84814 9.73438 15.3326 7.86406 17.5955C7.41562 18.1348 6.58437 18.1348 6.13594 17.5955ZM7 9.02335C8.28698 9.02335 9.33333 8.01175 9.33333 6.76751C9.33333 5.52328 8.28698 4.51168 7 4.51168C5.71302 4.51168 4.66667 5.52328 4.66667 6.76751C4.66667 8.01175 5.71302 9.02335 7 9.02335Z"
+                    fill="black"
+                  />
+                </svg>
+              </label>
+              <div class="div-text-input">
+                <input
+                  type="search"
+                  id="text-input"
+                  name="text-input"
+                  class="text-input"
+                  placeholder="Marseille, France"
+                />
+              </div>
+            </div>
+            <div class="button-search">
+              <button id="button">
+                Rechercher
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="59"
+                  height="59"
+                  viewBox="0 0 59 59"
+                  fill="none"
+                >
+                  <g filter="url(#filter0_d_239827_805)">
+                    <rect
+                      x="5"
+                      y="1"
+                      width="49"
+                      height="49"
+                      rx="15"
+                      fill="#0065FC"
+                    />
+                    <path
+                      d="M37.7688 31.6976L34.4582 28.3876C34.3088 28.2382 34.1062 28.1552 33.8937 28.1552H33.3525C34.2689 26.9832 34.8135 25.5091 34.8135 23.9056C34.8135 20.0909 31.7221 17 27.9068 17C24.0914 17 21 20.0909 21 23.9056C21 27.7202 24.0914 30.8112 27.9068 30.8112C29.5106 30.8112 30.9849 30.2667 32.1571 29.3504V29.8915C32.1571 30.104 32.2401 30.3065 32.3895 30.4559L35.7001 33.7659C36.0122 34.078 36.517 34.078 36.8258 33.7659L37.7655 32.8264C38.0776 32.5143 38.0776 32.0097 37.7688 31.6976ZM27.9068 28.1552C25.5591 28.1552 23.6564 26.2561 23.6564 23.9056C23.6564 21.5583 25.5558 19.656 27.9068 19.656C30.2544 19.656 32.1571 21.555 32.1571 23.9056C32.1571 26.2528 30.2577 28.1552 27.9068 28.1552Z"
+                      fill="white"
+                    />
+                    <rect
+                      x="4.5"
+                      y="0.5"
+                      width="50"
+                      height="50"
+                      rx="15.5"
+                      stroke="#0065FC"
+                    />
+                  </g>
+                  <defs>
+                    <filter
+                      id="filter0_d_239827_805"
+                      x="0"
+                      y="0"
+                      width="59"
+                      height="59"
+                      filterUnits="userSpaceOnUse"
+                      color-interpolation-filters="sRGB"
+                    >
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feColorMatrix
+                        in="SourceAlpha"
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                        result="hardAlpha"
+                      />
+                      <feOffset dy="4" />
+                      <feGaussianBlur stdDeviation="2" />
+                      <feComposite in2="hardAlpha" operator="out" />
+                      <feColorMatrix
+                        type="matrix"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in2="BackgroundImageFix"
+                        result="effect1_dropShadow_239827_805"
+                      />
+                      <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="effect1_dropShadow_239827_805"
+                        result="shape"
+                      />
+                    </filter>
+                  </defs>
+                </svg>
+              </button>
+            </div>
+          </form>
+
+          <div class="FilterBar">
+            <p class="filtres">Filtres</p>
+            <div class="FilterBar__button">
+              <i
+                class="fa-solid fa-money-bill-wave fa-lg"
+                style="color: #0065fc"
+              >
+              </i>
+              Économique
+            </div>
+            <div class="FilterBar__button">
+              <i class="fa-solid fa-person fa-xl" style="color: #0065fc"></i>
+              Familial
+            </div>
+            <div class="FilterBar__button">
+              <i class="fa-solid fa-heart fa-lg" style="color: #0065fc"></i>
+              Romantique
+            </div>
+            <div class="FilterBar__button">
+              <i class="fa-solid fa-fire fa-lg" style="color: #0065fc"></i>
+              Nos pépites
+            </div>
+          </div>
+
+          <div class="Infobar">
+            <div class="vector-Infobar">
+              <a href="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="5"
+                  height="15"
+                  viewBox="0 0 5 15"
+                  fill="none"
+                >
+                  <path
+                    d="M4.16691 13.125H3.33358V6.56251C3.33358 6.04425 2.9604 5.62501 2.50024 5.62501H0.833577C0.373421 5.62501 0.000244141 6.04425 0.000244141 6.56251C0.000244141 7.08077 0.373421 7.47364 0.833577 7.47364H1.66691V13.0986H0.833577C0.373421 13.0986 0.000244141 13.5179 0.000244141 14.0361C0.000244141 14.5544 0.373421 14.9736 0.833577 14.9736H4.16691C4.62707 14.9736 5.00024 14.5544 5.00024 14.0361C5.00024 13.5179 4.62785 13.125 4.16691 13.125ZM2.50024 3.75001C3.19061 3.75001 3.75024 3.12042 3.75024 2.34376C3.75024 1.5671 3.19035 0.937805 2.50024 0.937805C1.81014 0.937805 1.25024 1.5674 1.25024 2.34406C1.25024 3.12072 1.80988 3.75001 2.50024 3.75001Z"
+                    fill="#0065FC"
+                  />
+                </svg>
+              </a>
+            </div>
+            <p class="texte-Infobar">
+              Plus de 500 logements sont disponibles dans cette ville
+            </p>
+          </div>
+        </section>
+        <div class="hebergements-and-populaires">
+          <section id="hebergements" class="hebergements">
+            <h2 class="section-title">Hébergements à Marseille</h2>
+            <div class="hebergements-cards">
+              <a href="#">
+                <article class="card">
+                  <img
+                    src="./images/hebergements/fred-kleber.jpg"
+                    alt="Image de la chambre d'hôtel montrant deux lits"
+                  />
+                  <div class="card-content">
+                    <div class="card-txt">
+                      <h3 class="card-title">Hôtel du port</h3>
+                      <p class="card-subtitle">
+                        Nuit à partir de 52<span class="euro">€</span>
+                      </p>
+                    </div>
+                    <div class="card-rating">
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i
+                        class="fa-xs fa-solid fa-star neutral-star"
+                        aria-hidden="true"
+                      >
+                      </i>
+                      <span class="sr-only">Note de 4 sur 5</span>
+                    </div>
+                  </div>
+                </article>
+              </a>
+              <a href="#">
+                <article class="card">
+                  <img
+                    src="./images/hebergements/febrian-zakaria.jpg"
+                    alt="Image de la chambre d'hôtel montrant un lit"
+                  />
+                  <div class="card-content">
+                    <div class="card-txt">
+                      <h3 class="card-title">Hôtel Chez Amina</h3>
+                      <p class="card-subtitle">
+                        Nuit à partir de 96<span class="euro">€</span>
+                      </p>
+                    </div>
+                    <div class="card-rating">
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i
+                        class="fa-xs fa-solid fa-star neutral-star"
+                        aria-hidden="true"
+                      >
+                      </i>
+                      <span class="sr-only">Note de 4 sur 5</span>
+                    </div>
+                  </div>
+                </article>
+              </a>
+              <a href="#">
+                <article class="card">
+                  <img
+                    src="./images/hebergements/reisetopia.jpg"
+                    alt="Image de la chambre d'hôtel montrant un lit"
+                  />
+                  <div class="card-content">
+                    <div class="card-txt">
+                      <h3 class="card-title">Hôtel les mouettes</h3>
+                      <p class="card-subtitle">
+                        Nuit à partir de 76<span class="euro">€</span>
+                      </p>
+                    </div>
+                    <div class="card-rating">
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i
+                        class="fa-xs fa-solid fa-star neutral-star"
+                        aria-hidden="true"
+                      >
+                      </i>
+                      <span class="sr-only">Note de 4 sur 5</span>
+                    </div>
+                  </div>
+                </article>
+              </a>
+              <a href="#">
+                <article class="card">
+                  <img
+                    src="./images/hebergements/annie-spratt.jpg"
+                    alt="Image de la chambre d'hôtel montrant un lit"
+                  />
+                  <div class="card-content">
+                    <div class="card-txt">
+                      <h3 class="card-title">Hôtel de la mer</h3>
+                      <p class="card-subtitle">
+                        Nuit à partir de 46<span class="euro">€</span>
+                      </p>
+                    </div>
+                    <div class="card-rating">
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i
+                        class="fa-xs fa-solid fa-star neutral-star"
+                        aria-hidden="true"
+                      >
+                      </i>
+                      <span class="sr-only">Note de 4 sur 5</span>
+                    </div>
+                  </div>
+                </article>
+              </a>
+              <a href="#">
+                <article class="card">
+                  <img
+                    src="./images/hebergements/marcus-loke.jpg"
+                    alt="Image de la chambre d'hôtel montrant deux lits"
+                  />
+                  <div class="card-content">
+                    <div class="card-txt">
+                      <h3 class="card-title">Auberge La Canebière</h3>
+                      <p class="card-subtitle">
+                        Nuit à partir de 25<span class="euro">€</span>
+                      </p>
+                    </div>
+                    <div class="card-rating">
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i
+                        class="fa-xs fa-solid fa-star neutral-star"
+                        aria-hidden="true"
+                      >
+                      </i>
+                      <span class="sr-only">Note de 4 sur 5</span>
+                    </div>
+                  </div>
+                </article>
+              </a>
+              <a href="#">
+                <article class="card">
+                  <img
+                    src="./images/hebergements/nicate-lee.jpg"
+                    alt="Image de la chambre d'hôtel montrant deux lits"
+                  />
+                  <div class="card-content">
+                    <div class="card-txt">
+                      <h3 class="card-title">Auberge Le Panier</h3>
+                      <p class="card-subtitle">
+                        Nuit à partir de 23<span class="euro">€</span>
+                      </p>
+                    </div>
+                    <div class="card-rating">
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i
+                        class="fa-xs fa-solid fa-star neutral-star"
+                        aria-hidden="true"
+                      >
+                      </i>
+                      <span class="sr-only">Note de 4 sur 5</span>
+                    </div>
+                  </div>
+                </article>
+              </a>
+            </div>
+            <a href="#" class="lien-textHerbergements">Afficher plus</a>
+          </section>
+          <section class="populaires">
+            <div class="populaires-title">
+              <h2 class="section-title">Les plus populaires</h2>
+              <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+            </div>
+            <div class="populaires-cards">
+              <a href="#">
+                <article class="card">
+                  <img
+                    src="./images/hebergements/emile-guillemot.jpg"
+                    alt="Image de la chambre d'hôtel montrant un lit"
+                  />
+                  <div class="card-content">
+                    <div class="card-txt">
+                      <h3 class="card-title">Hôtel Le soleil du matin</h3>
+                      <p class="card-subtitle">
+                        Nuit à partir de 128<span class="euro">€</span>
+                      </p>
+                    </div>
+                    <div class="card-rating">
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i
+                        class="fa-xs fa-solid fa-star neutral-star"
+                        aria-hidden="true"
+                      >
+                      </i>
+                      <span class="sr-only">Note de 4 sur 5</span>
+                    </div>
+                  </div>
+                </article>
+              </a>
+              <a href="#">
+                <article class="card">
+                  <img
+                    src="./images/hebergements/aw-creative.jpg"
+                    alt="Image de la chambre d'hôtel montrant un lit"
+                  />
+                  <div class="card-content">
+                    <div class="card-txt">
+                      <h3 class="card-title">
+                        Chambres d’hôtes Au cœur de l’eau
+                      </h3>
+                      <p class="card-subtitle">
+                        Nuit à partir de 71<span class="euro">€</span>
+                      </p>
+                    </div>
+                    <div class="card-rating">
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i
+                        class="fa-xs fa-solid fa-star neutral-star"
+                        aria-hidden="true"
+                      >
+                      </i>
+                      <span class="sr-only">Note de 4 sur 5</span>
+                    </div>
+                  </div>
+                </article>
+              </a>
+              <a href="#">
+                <article class="card">
+                  <img
+                    src="./images/hebergements/febrian-zakaria2.jpg"
+                    alt="Image de la chambre d'hôtel montrant un lit"
+                  />
+                  <div class="card-content">
+                    <div class="card-txt">
+                      <h3 class="card-title">Hôtel Bleu et Blanc</h3>
+                      <p class="card-subtitle">
+                        Nuit à partir de 68<span class="euro">€</span>
+                      </p>
+                    </div>
+                    <div class="card-rating">
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                      <i
+                        class="fa-xs fa-solid fa-star neutral-star"
+                        aria-hidden="true"
+                      >
+                      </i>
+                      <span class="sr-only">Note de 4 sur 5</span>
+                    </div>
+                  </div>
+                </article>
+              </a>
+            </div>
+          </section>
+        </div>
+        <section class="activitesMarseille">
+          <h2 id="activites">Activités à Marseille</h2>
+          <div class="activites-cards">
+            <a href="#">
+              <article class="card">
+                <img
+                  src="./images/activites/reno-laithienne.jpg"
+                  alt="Image du Vieux-Port de Marseille"
+                />
+                <div class="card-txt">
+                  <h3 class="card-title">Vieux-Port</h3>
+                </div>
+              </article>
+            </a>
+            <a href="#">
+              <article class="card">
+                <img
+                  src="./images/activites/paul-hermann.jpg"
+                  alt="Image du Fort de Pomègues"
+                />
+                <div class="card-txt">
+                  <h3 class="card-title">Fort de Pomègues</h3>
+                </div>
+              </article>
+            </a>
+            <a href="#">
+              <article class="card">
+                <img
+                  src="./images/activites/kilyan-sockalingum.jpg"
+                  alt="Image du Parc national des Calanques"
+                />
+                <div class="card-txt">
+                  <h3 class="card-title">Parc national des Calanques</h3>
+                </div>
+              </article>
+            </a>
+            <a href="#">
+              <article class="card">
+                <img
+                  src="./images/activites/florian-wehde.jpg"
+                  alt="Image de Notre-Dame-de-la-Garde"
+                />
+                <div class="card-txt">
+                  <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
+                </div>
+              </article>
+            </a>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div>
+          <h2>À propos</h2>
+          <a href="">Fonctionnement du site</a><br />
+          <a href="">Conditions générales</a><br />
+          <a href="">Données et confidentialité</a>
+        </div>
+        <div>
+          <h2>Nos hébergements</h2>
+          <a href="">Charte qualité</a><br />
+          <a href="">Proposer votre hôtel</a>
+        </div>
+        <div>
+          <h2>Assistance</h2>
+          <a href="">Centre d'aide</a><br />
+          <a href="">Nous contacter</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
