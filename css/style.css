@@ -554,15 +554,19 @@ footer a:hover {
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media (max-width: 767.99px) {
 
     /** Général **/
+  
+
     body {
-        margin: 0px;
+        margin: Opx;
+        max-width: 100%;
     }
 
     .main-container {
         padding: 0px;
+        width: 100%;
     }
 
     /** header ***/
@@ -603,6 +607,8 @@ footer a:hover {
     /** Button-Search ******/
     button {
         visibility: hidden;
+        width: 0px;
+        font-size: 1px;
     }
 
     button svg {
@@ -682,6 +688,7 @@ footer a:hover {
         display: flex;
         flex-direction: column-reverse;
         height: auto;
+        width: 100%;
     }
 
     .hebergements-and-populaires section {
