@@ -608,7 +608,8 @@ footer a:hover {
     button {
         visibility: hidden;
         width: 0px;
-        font-size: 1px;
+        font-size: 0px;
+        padding: 0px;
     }
 
     button svg {
