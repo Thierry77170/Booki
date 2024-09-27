@@ -633,12 +633,9 @@ footer a:hover {
         padding: 0px;
     }
 
-    .div-text-input {
-        background-color: #FFFFFF;
-    }
-
     .text-input {
         width: 100%;
+        background-color: #FFFFFF;
     }
 
     .button-search {
